@@ -1,0 +1,7 @@
+name: Freezer
+version: '${project.version}'
+main: com.oxyrus.freezer.Freezer
+api-version: 1.19
+authors: [ Oxyrus ]
+description: Adds a recipe to craft ice blocks out of water and snow
+website: https://github.com/Oxyrus/freezer
