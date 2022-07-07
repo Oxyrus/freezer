@@ -12,9 +12,10 @@ public final class Freezer extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        ItemStack iceBlocks = new ItemStack(Material.ICE, 64);
+        ItemStack iceBlocks = new ItemStack(Material.BLUE_ICE, 64);
 
         ItemMeta meta = iceBlocks.getItemMeta();
+        assert meta != null;
         meta.setDisplayName("§bIce Block");
 
         iceBlocks.setItemMeta(meta);
@@ -25,7 +26,7 @@ public final class Freezer extends JavaPlugin {
 
         recipe.shape(" W ", " S ", "   ");
         recipe.setIngredient('W', Material.WATER_BUCKET);
-        recipe.setIngredient('S', Material.SNOW_BLOCK);
+        recipe.setIngredient('S', Material.SNOW);
 
         Bukkit.addRecipe(recipe);
     }
